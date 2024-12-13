@@ -1,94 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-const NewsSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
-    {
-      img: "src/assets/berita/1.png",
-      caption: "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
-      link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
-    },
-    {
-      img: "src/assets/berita/1.png",
-      caption: "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
-      link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
-    },
-    {
-      img: "src/assets/berita/1.png",
-      caption: "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
-      link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
-    },
-    {
-      img: "src/assets/berita/1.png",
-      caption: "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
-      link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
-    },
-    {
-      img: "src/assets/berita/1.png",
-      caption: "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
-      link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
-    },
-    {
-      img: "src/assets/berita/1.png",
-      caption: "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
-      link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
-    },
-    {
-      img: "src/assets/berita/1.png",
-      caption: "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
-      link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
-    },
-    {
-      img: "src/assets/berita/1.png",
-      caption: "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
-      link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
-    },
-  ];
+const NewsComponents = () => {
+  const [news, setNews] = useState([]);
 
+  // Fetch news data from API
   useEffect(() => {
-    const slideInterval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 3000); 
+    const fetchNews = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/api/news");
+        setNews(response.data);
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    };
 
-    return () => clearInterval(slideInterval);
-  }, [slides.length]);
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
+    fetchNews();
+  }, []);
 
   return (
-    <div className="news-container">
-      <div className="news-slider">
-        {slides.map((slide, index) => (
-          <div
-            className={`news-slide ${
-              index === currentSlide ? "active" : ""
-            }`}
-            key={index}
-          >
-            <img src={slide.img} alt={slide.caption} />
-            <div className="slide-caption">
-              <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                {slide.caption}
+    <div>
+      <div>
+        <div className="news-grid">
+          {news.map((item) => (
+            <div className="news-item" key={item.id}>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={item.logo}
+                  alt="Logo"
+                  className="news-logo"
+                />
+                <img
+                  src={item.thumbnail}
+                  alt="News Thumbnail"
+                  className="thumbnail"
+                />
+                <h3>{item.title}</h3>
+                <p>{new Date(item.date).toLocaleDateString()}</p>
               </a>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="dot-news-container">
-        {slides.map((_, index) => (
-          <span
-            key={index}
-            className={`dot-news ${
-              index === currentSlide ? "active" : ""
-            }`}
-            onClick={() => goToSlide(index)}
-          ></span>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NewsSlider
+export default NewsComponents;

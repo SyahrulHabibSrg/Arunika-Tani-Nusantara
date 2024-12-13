@@ -17,7 +17,7 @@ function NavScrollExample() {
           >
             <Nav.Link href="#action1" className="text-white">Dashboard</Nav.Link>
             <Nav.Link href="/admin/umkm" className="text-white">Product</Nav.Link>
-            <Nav.Link href="/" className="text-white">News</Nav.Link>
+            <Nav.Link href="/admin/news" className="text-white">News</Nav.Link>
             <Nav.Link href="/admin/messages" className="text-white">Messages</Nav.Link>
           </Nav>
         </Navbar.Collapse>

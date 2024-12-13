@@ -12,6 +12,7 @@ import AdminPage from "./admin/AdminPage";
 import Daftar from "./components/Daftar";
 import AdminUMKM from "./admin/AdminUMKM";
 import AdminMessages from "./admin/adminMessages";
+import AdminNews from "./admin/AdminNews";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Route path='/admin' Component={AdminPage} />
       <Route path='/admin/messages' Component={AdminMessages} />
       <Route path='/admin/umkm' Component={AdminUMKM} />
+      <Route path='/admin/news' Component={AdminNews} />
     </Routes>
   </div>
   )
