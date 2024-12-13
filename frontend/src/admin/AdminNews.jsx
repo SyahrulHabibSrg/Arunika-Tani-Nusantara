@@ -51,7 +51,6 @@ const AdminNews = () => {
     }
   };
 
-  // Delete news
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:5000/api/news/${id}`);
@@ -61,7 +60,6 @@ const AdminNews = () => {
     }
   };
 
-  // Load news data for editing
   const handleEdit = (item) => {
     setFormData(item);
     setEditingId(item.id);

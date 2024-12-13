@@ -23,7 +23,6 @@ const AdminUMKM = () => {
     }
   };
 
-  // Memanggil fetchUMKM ketika komponen pertama kali dimuat
   useEffect(() => {
     fetchUMKM();
   }, []);
@@ -31,7 +30,9 @@ const AdminUMKM = () => {
   // Fungsi untuk menghapus data UMKM
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/api/umkm/${id}`);
+      const response = await axios.delete(
+        `http://localhost:5000/api/umkm/${id}`
+      );
       alert(response.data.message);
       setUmkmList((prevList) => prevList.filter((item) => item.id !== id));
     } catch (error) {
@@ -40,7 +41,6 @@ const AdminUMKM = () => {
     }
   };
 
-  // Validasi form menggunakan Yup
   const schema = yup.object().shape({
     name: yup.string().required("Nama produk harus diisi"),
     category: yup.string().required("Kategori harus diisi"),
@@ -59,15 +59,14 @@ const AdminUMKM = () => {
       <div className="py-4">
         <h2>Produk UMKM</h2>
         <div className="mt-4 px-5">
-          {/* Form untuk menambah atau mengedit UMKM */}
           <Formik
-            key={editUMKM ? editUMKM.id : "new"} // Memastikan form dirender ulang saat edit
+            key={editUMKM ? editUMKM.id : "new"}
             validationSchema={schema}
             initialValues={{
               name: editUMKM ? editUMKM.name : "",
               category: editUMKM ? editUMKM.category : "",
               price: editUMKM ? editUMKM.price : "",
-              image: editUMKM ? null : "", // Gambar tidak diisi saat edit
+              image: editUMKM ? null : "",
             }}
             onSubmit={async (values, { resetForm }) => {
               const formData = new FormData();
@@ -87,18 +86,24 @@ const AdminUMKM = () => {
                   );
                   alert(response.data.message);
                 } else {
-                  // Tambah data UMKM baru
-                  const response = await axios.post("http://localhost:5000/api/umkm", formData, {
-                    headers: { "Content-Type": "multipart/form-data" },
-                  });
+                  const response = await axios.post(
+                    "http://localhost:5000/api/umkm",
+                    formData,
+                    {
+                      headers: { "Content-Type": "multipart/form-data" },
+                    }
+                  );
                   alert(response.data.message);
                 }
                 resetForm();
-                setEditUMKM(null); // Reset form setelah submit
-                fetchUMKM(); // Refresh daftar UMKM
+                setEditUMKM(null);
+                fetchUMKM();
               } catch (error) {
                 console.error("Error saving UMKM:", error);
-                alert(error.response?.data?.message || "Gagal menyimpan produk UMKM.");
+                alert(
+                  error.response?.data?.message ||
+                    "Gagal menyimpan produk UMKM."
+                );
               }
             }}
           >
@@ -176,13 +181,9 @@ const AdminUMKM = () => {
           </Formik>
         </div>
 
-        {/* List UMKM */}
         <div className="umkm-list">
           {umkmList.map((item) => (
-            <div
-              className="umkm-item d-flex gap-1"
-              key={item.id}
-            >
+            <div className="umkm-item d-flex gap-1" key={item.id}>
               <img src={item.image} alt={item.name} width="150" height="150" />
               <span>{item.category}</span>
               <h3>{item.name}</h3>

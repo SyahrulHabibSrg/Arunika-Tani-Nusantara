@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const SejarahComponents = () => {
-    const [slideIndex, setSlideIndex] = useState(0); // Dimulai dari slide pertama
+    const [slideIndex, setSlideIndex] = useState(0); 
 
     const slides = [
         {

@@ -25,7 +25,7 @@ const ContactForm = () => {
         body: JSON.stringify(formData),
       });
       const data = await response.json();
-      alert(data.message); // Menampilkan pesan dari server
+      alert(data.message);
     } catch (error) {
       alert("Failed to send message.");
     }

@@ -21,7 +21,6 @@ const UMKM = () => {
     <div className="umkm-list">
       {umkmList.map((item) => (
         <div className="umkm-item" key={item.id}>
-          {/* Menampilkan gambar menggunakan URL lengkap */}
           <img src={item.image} alt={item.name} width="150" height="150" />
           <span>{item.category}</span>
           <h3>{item.name}</h3>

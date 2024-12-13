@@ -1,6 +1,5 @@
 const db = require('../config/database');
 
-// Get all news
 exports.getAllNews = (req, res) => {
   const query = 'SELECT * FROM news';
   db.query(query, (err, results) => {
@@ -12,7 +11,6 @@ exports.getAllNews = (req, res) => {
   });
 };
 
-// Get single news by ID
 exports.getNewsById = (req, res) => {
   const query = 'SELECT * FROM news WHERE id = ?';
   db.query(query, [req.params.id], (err, results) => {
@@ -24,7 +22,6 @@ exports.getNewsById = (req, res) => {
   });
 };
 
-// Create news
 exports.createNews = (req, res) => {
   const { title, date, logo, thumbnail, link } = req.body;
   const query = 'INSERT INTO news (title, date, logo, thumbnail, link) VALUES (?, ?, ?, ?, ?)';
@@ -37,7 +34,6 @@ exports.createNews = (req, res) => {
   });
 };
 
-// Update news
 exports.updateNews = (req, res) => {
   const { title, date, logo, thumbnail, link } = req.body;
   const query = 'UPDATE news SET title = ?, date = ?, logo = ?, thumbnail = ?, link = ? WHERE id = ?';
@@ -50,7 +46,6 @@ exports.updateNews = (req, res) => {
   });
 };
 
-// Delete news
 exports.deleteNews = (req, res) => {
   const query = 'DELETE FROM news WHERE id = ?';
   db.query(query, [req.params.id], (err) => {

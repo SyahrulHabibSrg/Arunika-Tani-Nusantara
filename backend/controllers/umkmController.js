@@ -10,7 +10,7 @@ const createUMKM = (req, res) => {
       console.error('Error inserting UMKM:', err);
       return res.status(500).json({ message: 'Gagal Menambahkan Product UMKM' });
     }
-    // Kirimkan URL gambar lengkap
+
     const imageUrl = image ? `http://localhost:5000/uploads/${image}` : null;
     res.status(201).json({
       message: 'Produk UMKM berhasil ditambahkan',
@@ -26,7 +26,7 @@ const getUMKM = (req, res) => {
       console.error('Error fetching UMKM:', err);
       return res.status(500).json({ message: 'Failed to fetch UMKM' });
     }
-    // Kirimkan data UMKM beserta URL gambar
+
     const data = results.map((umkm) => ({
       id: umkm.id,
       name: umkm.name,
@@ -38,7 +38,7 @@ const getUMKM = (req, res) => {
   });
 };
 
-// Menghapus UMKM berdasarkan ID
+
 const deleteUMKM = (req, res) => {
   const { id } = req.params;
 

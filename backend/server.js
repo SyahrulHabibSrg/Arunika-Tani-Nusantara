@@ -14,10 +14,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Menyajikan folder uploads untuk akses gambar
 app.use('/uploads', express.static('uploads'));
 
-// Gunakan rute UMKM
 app.use('/api/umkm', umkmRoutes);
 app.use('/api', contactRoutes); 
 app.use('/api/news', newsRoutes);

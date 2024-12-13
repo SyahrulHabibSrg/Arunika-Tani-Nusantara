@@ -7,15 +7,15 @@ function BasicExample() {
       className="d-flex justify-content-center align-items-center"
       style={{
         height: "100vh",
-        backgroundImage: 'url("./src/assets/login.jpg")', // Ganti dengan URL gambar latar belakang kamu
-        backgroundSize: "cover", // Agar gambar mengisi seluruh area
-        backgroundPosition: "center", // Agar gambar selalu terpusat
+        backgroundImage: 'url("./src/assets/login.jpg")',
+        backgroundSize: "cover", 
+        backgroundPosition: "center", 
       }}
     >
       <Form
         className="col-md-3 p-4 rounded"
         style={{
-          backgroundColor: "rgba(255, 255, 255, 0.7)", // Warna latar belakang form dengan transparansi
+          backgroundColor: "rgba(255, 255, 255, 0.7)", 
         }}
       >
         <Form.Group className="mb-3" controlId="formUsername">
