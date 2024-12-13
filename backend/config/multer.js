@@ -2,7 +2,7 @@ const multer = require('multer');
 const path = require('path');
 
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
+  destination: (req, file, cb) => {const upload = require('../config/multer'); // Menggunakan multerConfig yang samaconst upload = require('../config/multer'); // Menggunakan multerConfig yang samaconst upload = require('../config/multer'); // Menggunakan multerConfig yang samaconst upload = require('../config/multer'); // Menggunakan multerConfig yang samaconst upload = require('../config/multer'); // Menggunakan multerConfig yang samaconst upload = require('../config/multer'); // Menggunakan multerConfig yang samaconst upload = require('../config/multer'); // Menggunakan multerConfig yang sama
     cb(null, 'uploads/'); // Folder untuk menyimpan gambar
   },
   filename: (req, file, cb) => {

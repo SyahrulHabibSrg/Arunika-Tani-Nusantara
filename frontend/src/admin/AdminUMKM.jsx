@@ -29,15 +29,17 @@ const AdminUMKM = () => {
 
   // Fungsi untuk menghapus data UMKM
   const handleDelete = async (id) => {
-    try {
-      const response = await axios.delete(
-        `http://localhost:5000/api/umkm/${id}`
-      );
-      alert(response.data.message);
-      setUmkmList((prevList) => prevList.filter((item) => item.id !== id));
-    } catch (error) {
-      console.error("Error deleting UMKM:", error);
-      alert(error.response?.data?.message || "Gagal menghapus produk UMKM.");
+    if (window.confirm("Apakah Anda yakin ingin menghapus berita ini?")) {
+      try {
+        const response = await axios.delete(
+          `http://localhost:5000/api/umkm/${id}`
+        );
+        alert(response.data.message);
+        setUmkmList((prevList) => prevList.filter((item) => item.id !== id));
+      } catch (error) {
+        console.error("Error deleting UMKM:", error);
+        alert(error.response?.data?.message || "Gagal menghapus produk UMKM.");
+      }
     }
   };
 
@@ -180,32 +182,39 @@ const AdminUMKM = () => {
             )}
           </Formik>
         </div>
-
-        <div className="umkm-list">
-          {umkmList.map((item) => (
-            <div className="umkm-item d-flex gap-1" key={item.id}>
-              <img src={item.image} alt={item.name} width="150" height="150" />
-              <span>{item.category}</span>
-              <h3>{item.name}</h3>
-              <p>Rp {item.price}</p>
-              <div className="d-flex justify-content-center align-content-center gap-2">
-                <Button
-                  variant="primary"
-                  onClick={() => setEditUMKM(item)}
-                  className="edit-umkm align-items-center py-1 px-4 mt-0 btn-sm"
-                >
-                  Edit
-                </Button>
-                <Button
-                  variant="danger"
-                  onClick={() => handleDelete(item.id)}
-                  className="delete-umkm align-items-center py-1 px-4 mt-0 btn-sm"
-                >
-                  Delete
-                </Button>
+        <div className="mt-4 text-center">
+          <h3 className="mb-4">Produk UMKM Yang Ditambahkan</h3>
+          <div className="umkm-list">
+            {umkmList.map((item) => (
+              <div className="umkm-item d-flex gap-1" key={item.id}>
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  width="150"
+                  height="150"
+                />
+                <span>{item.category}</span>
+                <h3>{item.name}</h3>
+                <p>Rp {item.price}</p>
+                <div className="d-flex justify-content-center align-content-center gap-2">
+                  <Button
+                    variant="primary"
+                    onClick={() => setEditUMKM(item)}
+                    className="edit-umkm align-items-center py-1 px-4 mt-0 btn-sm"
+                  >
+                    Edit
+                  </Button>
+                  <Button
+                    variant="danger"
+                    onClick={() => handleDelete(item.id)}
+                    className="delete-umkm align-items-center py-1 px-4 mt-0 btn-sm"
+                  >
+                    Delete
+                  </Button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
+const path = require('path'); // Tambahkan path di sini
 const umkmRoutes = require('./routes/umkmRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const newsRoutes = require('./routes/newsRoutes');
@@ -14,10 +15,12 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/uploads', express.static('uploads'));
+// Middleware untuk melayani file gambar di folder uploads
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
+// Routes
 app.use('/api/umkm', umkmRoutes);
-app.use('/api', contactRoutes); 
+app.use('/api', contactRoutes);
 app.use('/api/news', newsRoutes);
 
 const PORT = process.env.PORT || 5000;
