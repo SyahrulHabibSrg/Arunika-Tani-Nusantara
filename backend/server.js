@@ -3,6 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const umkmRoutes = require('./routes/umkmRoutes');
+const contactRoutes = require('./routes/contactRoutes');
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use('/uploads', express.static('uploads'));
 
 // Gunakan rute UMKM
 app.use('/api/umkm', umkmRoutes);
+app.use('/api', contactRoutes); 
 
 const PORT = process.env.PORT || 5000;
 

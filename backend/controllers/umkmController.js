@@ -8,12 +8,12 @@ const createUMKM = (req, res) => {
   db.query(query, [name, category, price, image], (err, result) => {
     if (err) {
       console.error('Error inserting UMKM:', err);
-      return res.status(500).json({ message: 'Failed to add UMKM' });
+      return res.status(500).json({ message: 'Gagal Menambahkan Product UMKM' });
     }
     // Kirimkan URL gambar lengkap
     const imageUrl = image ? `http://localhost:5000/uploads/${image}` : null;
     res.status(201).json({
-      message: 'UMKM berhasil ditambahkan',
+      message: 'Produk UMKM berhasil ditambahkan',
       data: { id: result.insertId, name, category, price, image: imageUrl },
     });
   });
@@ -46,10 +46,31 @@ const deleteUMKM = (req, res) => {
   db.query(query, [id], (err, result) => {
     if (err) {
       console.error('Error deleting UMKM:', err);
-      return res.status(500).json({ message: 'Failed to delete UMKM' });
+      return res.status(500).json({ message: 'Gagal menghapus product UMKM' });
     }
-    res.status(200).json({ message: 'UMKM berhasil dihapus' });
+    res.status(200).json({ message: 'Produk UMKM berhasil dihapus' });
   });
 };
 
-module.exports = { createUMKM, getUMKM, deleteUMKM };
+const updateUMKM = (req, res) => {
+  const { id } = req.params;
+  const { name, category, price } = req.body;
+  const image = req.file ? req.file.filename : null;
+
+  const query = `UPDATE umkm SET name = ?, category = ?, price = ?, image = ? WHERE id = ?`;
+  db.query(query, [name, category, price, image, id], (err, result) => {
+    if (err) {
+      console.error('Error updating UMKM:', err);
+      return res.status(500).json({ message: 'Gagal mengupdate produk UMKM' });
+    }
+
+    const imageUrl = image ? `http://localhost:5000/uploads/${image}` : null;
+    res.status(200).json({
+      message: 'Produk UMKM berhasil diedit',
+      data: { id, name, category, price, image: imageUrl },
+    });
+  });
+};
+
+module.exports = { createUMKM, getUMKM, deleteUMKM, updateUMKM };
+

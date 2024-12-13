@@ -26,7 +26,10 @@ function BasicExample() {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Button variant="success" type="sign up" className="button-login mb-3">
+        <Form.Text className="text-muted m-auto text-end">
+          <a href="/daftar">Lupa Password? </a>
+        </Form.Text>
+        <Button variant="success" type="sign up" className="button-login mb-3 mt-4">
           Login
         </Button>
         <Form.Text className="text-muted">

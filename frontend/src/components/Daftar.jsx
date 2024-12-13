@@ -31,7 +31,7 @@ function BasicExample() {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Button variant="success" type="register" className="mb-3">
+        <Button variant="success" type="register" className="mb-3 mt-5">
           Daftar
         </Button>
         <Form.Text className="text-muted">

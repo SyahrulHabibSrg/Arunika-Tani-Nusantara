@@ -10,6 +10,9 @@ import FasilitasPage from './pages/FasilitasPage';
 import Login from "./components/Login";
 import AdminPage from "./admin/AdminPage";
 import Daftar from "./components/Daftar";
+import AdminUMKM from "./admin/AdminUMKM";
+import AdminMessages from "./admin/adminMessages";
+
 
 function App() {
   return(
@@ -22,9 +25,11 @@ function App() {
       <Route path='/galeri' Component={GaleriPage} />
       <Route path='/berita' Component={BeritaPage} />
       <Route path='/kontak' Component={KontakPage} />
-      <Route path='/admin' Component={AdminPage} />
       <Route path='/login' Component={Login} />
       <Route path='/daftar' Component={Daftar} />
+      <Route path='/admin' Component={AdminPage} />
+      <Route path='/admin/messages' Component={AdminMessages} />
+      <Route path='/admin/umkm' Component={AdminUMKM} />
     </Routes>
   </div>
   )

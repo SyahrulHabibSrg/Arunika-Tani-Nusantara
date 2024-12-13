@@ -7,7 +7,7 @@ function NavScrollExample() {
   return (
     <Navbar expand="lg" className="bg-dark-green">
       <Container fluid>
-        <Navbar.Brand href="#" className="text-white">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#" className="text-white mx-lg-3 my-1">Admin</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -16,9 +16,9 @@ function NavScrollExample() {
             navbarScroll
           >
             <Nav.Link href="#action1" className="text-white">Dashboard</Nav.Link>
-            <Nav.Link href="#action2" className="text-white">Product</Nav.Link>
-            <Nav.Link href="#action3" className="text-white">News</Nav.Link>
-            <Nav.Link href="#action4" className="text-white">Form Kontak</Nav.Link>
+            <Nav.Link href="/admin/umkm" className="text-white">Product</Nav.Link>
+            <Nav.Link href="/" className="text-white">News</Nav.Link>
+            <Nav.Link href="/admin/messages" className="text-white">Messages</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

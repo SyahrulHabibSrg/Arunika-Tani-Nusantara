@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -16,15 +17,15 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/send-message", {
+      const response = await fetch("http://localhost:5000/api/send-message", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-      const data = await response.text();
-      alert(data);
+      const data = await response.json();
+      alert(data.message); // Menampilkan pesan dari server
     } catch (error) {
       alert("Failed to send message.");
     }
@@ -95,7 +96,7 @@ const ContactForm = () => {
         </button>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
