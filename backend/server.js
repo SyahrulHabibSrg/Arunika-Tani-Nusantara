@@ -7,6 +7,8 @@ const umkmRoutes = require('./routes/umkmRoutes');
 const contactRoutes = require('./routes/contactRoutes');
 const newsRoutes = require('./routes/newsRoutes');
 
+const authRoutes = require("./routes/authRoutes");
+
 dotenv.config();
 
 const app = express();
@@ -22,6 +24,9 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/api/umkm', umkmRoutes);
 app.use('/api', contactRoutes);
 app.use('/api/news', newsRoutes);
+
+app.use("/api", authRoutes);
+
 
 const PORT = process.env.PORT || 5000;
 

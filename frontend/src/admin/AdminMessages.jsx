@@ -22,7 +22,7 @@ const AdminMessages = () => {
   return (
     <div>
         <NavbarAdmin/>
-      <div className="admin-messages mt-3">
+      <div className="admin-messages mt-3 px-5">
         <h2>Form Pertanyaan</h2>
         <Table striped bordered hover size="sm">
           <thead className="title-table bg-body-secondary text-center">

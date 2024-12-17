@@ -7,9 +7,9 @@ import KontakPage from './pages/KontakPage';
 import WisataPage from './pages/WisataPage';
 import GaleriPage from './pages/GaleriPage';
 import FasilitasPage from './pages/FasilitasPage';
-import Login from "./components/Login";
+import LoginComponents from "./pages/LoginPage";
 import AdminPage from "./admin/AdminPage";
-import Daftar from "./components/Daftar";
+import RegisterPage from "./pages/RegisterPage";
 import AdminUMKM from "./admin/AdminUMKM";
 import AdminMessages from "./admin/adminMessages";
 import AdminNews from "./admin/AdminNews";
@@ -26,8 +26,8 @@ function App() {
       <Route path='/galeri' Component={GaleriPage} />
       <Route path='/berita' Component={BeritaPage} />
       <Route path='/kontak' Component={KontakPage} />
-      <Route path='/login' Component={Login} />
-      <Route path='/daftar' Component={Daftar} />
+      <Route path='/login' Component={LoginComponents} />
+      <Route path='/register' Component={RegisterPage} />
       <Route path='/admin' Component={AdminPage} />
       <Route path='/admin/messages' Component={AdminMessages} />
       <Route path='/admin/umkm' Component={AdminUMKM} />
