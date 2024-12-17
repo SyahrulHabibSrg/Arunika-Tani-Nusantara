@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const NavbarComponents = () => {
   const [isToggled, setIsToggled] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  const navigate = useNavigate();
+
+  // Fungsi untuk toggle menu pada mobile
   const handleToggle = () => {
     setIsToggled(!isToggled);
   };
 
+  // Fungsi untuk mengecek scroll
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -19,6 +25,24 @@ const NavbarComponents = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Cek apakah user sudah login dengan melihat token di localStorage
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
+
+  // Fungsi untuk logout
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("role"); // Jika ada role yang disimpan
+    setIsLoggedIn(false);
+    navigate("/login"); // Redirect ke halaman login
+  };
 
   return (
     <div>
@@ -53,9 +77,15 @@ const NavbarComponents = () => {
               <a href="/kontak">Kontak</a>
             </li>
             <li>
-              <a href="/login">
-                <button className="login-button">Login</button>
-              </a>
+              {isLoggedIn ? (
+                <button className="login-button bg-danger text-white" onClick={handleLogout}>
+                  Logout
+                </button>
+              ) : (
+                <a href="/login">
+                  <button className="login-button">Login</button>
+                </a>
+              )}
             </li>
           </ul>
         </div>

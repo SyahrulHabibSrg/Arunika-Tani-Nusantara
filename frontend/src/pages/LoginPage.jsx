@@ -23,6 +23,8 @@ function LoginPage() {
       const data = await response.json();
 
       if (response.ok) {
+        localStorage.setItem("token", data.token); // Simpan token
+        localStorage.setItem("role", data.role);   
         alert("Login berhasil!");
 
         if (data.role === "admin") {
