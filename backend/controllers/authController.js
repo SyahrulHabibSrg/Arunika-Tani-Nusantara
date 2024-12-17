@@ -58,4 +58,14 @@ const loginUser = (req, res) => {
   });
 };
 
-module.exports = { registerUser, loginUser };
+const getUsers = (req, res) => {
+    db.query('SELECT * FROM users', (err, results) => {
+      if (err) {
+        console.error('Error getting users:', err);
+        return res.status(500).json({ message: 'Error fetching users' });
+      }
+      res.json(results);
+    });
+  };
+
+module.exports = { registerUser, loginUser, getUsers };
