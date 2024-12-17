@@ -2,16 +2,14 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
-import { useNavigate } from "react-router-dom"; // Untuk melakukan navigasi setelah logout
+import { useNavigate } from "react-router-dom"; 
 
 function NavScrollExample() {
   const navigate = useNavigate();
 
   // Fungsi untuk logout
   const handleLogout = () => {
-    // Hapus data login (misalnya token atau informasi sesi)
-    localStorage.removeItem("token"); // Jika Anda menyimpan token di localStorage
-    // Redirect ke halaman login
+    localStorage.removeItem("token"); 
     navigate("/login");
   };
 

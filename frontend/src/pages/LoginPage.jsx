@@ -25,14 +25,13 @@ function LoginPage() {
       if (response.ok) {
         alert("Login berhasil!");
 
-        // Redirect sesuai role user
         if (data.role === "admin") {
-          navigate("/admin"); // Halaman Admin
+          navigate("/admin");
         } else if (data.role === "user") {
-          navigate("/"); // Halaman Home
+          navigate("/"); 
         }
       } else {
-        alert(data.message); // Pesan error jika gagal
+        alert(data.message); 
       }
     } catch (error) {
       console.error("Login error:", error.message);

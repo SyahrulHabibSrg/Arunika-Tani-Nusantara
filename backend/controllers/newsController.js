@@ -1,7 +1,7 @@
 const db = require("../config/database");
 const path = require("path");
 
-// GET: Fetch all news
+// GET all news
 exports.getAllNews = (req, res) => {
   const query = "SELECT * FROM news";
   db.query(query, (err, results) => {
@@ -10,7 +10,7 @@ exports.getAllNews = (req, res) => {
   });
 };
 
-// POST: Add new news
+// Add new news
 exports.addNews = (req, res) => {
   const { title, link, date } = req.body;
   const logo = req.files?.logo ? `/uploads/${req.files.logo[0].filename}` : null;
@@ -23,7 +23,7 @@ exports.addNews = (req, res) => {
   });
 };
 
-// PUT: Update news
+// Update news
 exports.updateNews = (req, res) => {
   const { id } = req.params;
   const { title, link, date } = req.body;
@@ -38,7 +38,7 @@ exports.updateNews = (req, res) => {
   });
 };
 
-// DELETE: Remove news
+// DELETE news
 exports.deleteNews = (req, res) => {
   const { id } = req.params;
 

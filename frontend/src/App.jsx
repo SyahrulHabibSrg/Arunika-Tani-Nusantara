@@ -7,7 +7,7 @@ import KontakPage from './pages/KontakPage';
 import WisataPage from './pages/WisataPage';
 import GaleriPage from './pages/GaleriPage';
 import FasilitasPage from './pages/FasilitasPage';
-import LoginComponents from "./pages/LoginPage";
+import LoginPage from "./pages/LoginPage";
 import AdminPage from "./admin/AdminPage";
 import RegisterPage from "./pages/RegisterPage";
 import AdminUMKM from "./admin/AdminUMKM";
@@ -26,7 +26,7 @@ function App() {
       <Route path='/galeri' Component={GaleriPage} />
       <Route path='/berita' Component={BeritaPage} />
       <Route path='/kontak' Component={KontakPage} />
-      <Route path='/login' Component={LoginComponents} />
+      <Route path='/login' Component={LoginPage} />
       <Route path='/register' Component={RegisterPage} />
       <Route path='/admin' Component={AdminPage} />
       <Route path='/admin/messages' Component={AdminMessages} />

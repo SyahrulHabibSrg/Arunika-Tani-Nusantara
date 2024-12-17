@@ -20,7 +20,7 @@ function RegisterPage() {
           email: email,
           username: username,
           password: password,
-          role: "user", // Default role user
+          role: "user", 
         }),
       });
 
@@ -28,7 +28,7 @@ function RegisterPage() {
 
       if (response.ok) {
         alert(data.message);
-        window.location.href = "/login"; // Redirect ke halaman login
+        window.location.href = "/login"; 
       } else {
         alert(`Registrasi gagal: ${data.message}`);
       }

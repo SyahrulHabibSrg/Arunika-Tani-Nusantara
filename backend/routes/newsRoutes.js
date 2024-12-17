@@ -3,7 +3,6 @@ const router = express.Router();
 const newsController = require("../controllers/newsController");
 const upload = require("../config/multer");
 
-// Endpoint CRUD
 router.get("/", newsController.getAllNews);
 router.post("/", upload.fields([{ name: "logo" }, { name: "thumbnail" }]), newsController.addNews);
 router.put("/:id", upload.fields([{ name: "logo" }, { name: "thumbnail" }]), newsController.updateNews);

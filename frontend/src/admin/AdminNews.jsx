@@ -9,7 +9,6 @@ const AdminNews = () => {
   const [newsList, setNewsList] = useState([]);
   const [editNews, setEditNews] = useState(null);
 
-  // Function to fetch news data from backend
   const fetchNews = async () => {
     try {
       const response = await axios.get("http://localhost:5000/api/news");
@@ -23,7 +22,6 @@ const AdminNews = () => {
     fetchNews();
   }, []);
 
-  // Validation schema for the form
   const schema = Yup.object().shape({
     title: Yup.string().required("Judul wajib diisi"),
     link: Yup.string()
@@ -34,7 +32,6 @@ const AdminNews = () => {
     thumbnail: Yup.mixed().required("Thumbnail wajib diunggah"),
   });
 
-  // Function to handle deleting a news item
   const deleteNews = async (id) => {
     if (window.confirm("Apakah Anda yakin ingin menghapus berita ini?")) {
       try {
@@ -42,7 +39,7 @@ const AdminNews = () => {
           `http://localhost:5000/api/news/${id}`
         );
         alert(response.data.message);
-        fetchNews(); // Refresh the news list after deletion
+        fetchNews(); 
       } catch (error) {
         console.error("Error deleting news:", error);
         alert(error.response?.data?.message || "Gagal menghapus berita.");
@@ -50,9 +47,8 @@ const AdminNews = () => {
     }
   };
 
-  // Function to handle editing a news item
   const updateNews = (item) => {
-    setEditNews(item); // Set the selected news item for editing
+    setEditNews(item); 
   };
 
   return (

@@ -5,12 +5,10 @@ const db = require("../config/database");
 const registerUser = (req, res) => {
   const { email, username, password, role } = req.body;
 
-  // Validasi input
   if (!email || !username || !password) {
     return res.status(400).json({ message: "Semua input harus diisi!" });
   }
 
-  // Hash password sebelum disimpan
   bcrypt.hash(password, 10, (err, hashedPassword) => {
     if (err) {
       return res.status(500).json({ message: "Error saat meng-hash password!" });
@@ -51,13 +49,11 @@ const loginUser = (req, res) => {
 
     const user = results[0];
 
-    // Verifikasi password menggunakan bcrypt
     const passwordMatch = await bcrypt.compare(password, user.password);
     if (!passwordMatch) {
       return res.status(401).json({ message: "Password salah!" });
     }
 
-    // Kirim data role ke frontend
     res.status(200).json({ message: "Login berhasil!", role: user.role });
   });
 };

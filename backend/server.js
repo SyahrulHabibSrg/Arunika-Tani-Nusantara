@@ -20,7 +20,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Middleware untuk melayani file gambar di folder uploads
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// Routes
 app.use('/api/umkm', umkmRoutes);
 app.use('/api', contactRoutes);
 app.use('/api/news', newsRoutes);
