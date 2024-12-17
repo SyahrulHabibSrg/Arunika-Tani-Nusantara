@@ -12,6 +12,7 @@ exports.getAllNews = (req, res) => {
 
 // Add new news
 exports.addNews = (req, res) => {
+  console.log(req.files);
   const { title, link, date } = req.body;
   const logo = req.files?.logo ? `/uploads/${req.files.logo[0].filename}` : null;
   const thumbnail = req.files?.thumbnail ? `/uploads/${req.files.thumbnail[0].filename}` : null;

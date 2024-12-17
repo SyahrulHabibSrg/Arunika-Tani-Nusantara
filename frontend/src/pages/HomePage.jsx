@@ -221,7 +221,7 @@ const HomePage = () => {
             <img src="src/assets/umkm/1.png" alt="" />
             <span>Makanan & Minuman</span>
             <h3>Otak-Otak</h3>
-            <p>Rp 0</p>
+            <p>Rp 15.000</p>
             <div className="button-container">
               <a href="http://wa.me/6285932982930">
                 <button className="order-button">
@@ -240,7 +240,7 @@ const HomePage = () => {
             <img src="src/assets/umkm/2.png" alt="" />
             <span>Makanan & Minuman</span>
             <h3>Gong-gong</h3>
-            <p>Rp 0</p>
+            <p>Rp 12.000</p>
             <div className="button-container">
               <a href="http://wa.me/6285932982930">
                 <button className="order-button">
@@ -259,7 +259,7 @@ const HomePage = () => {
             <img src="src/assets/umkm/3.png" alt="" />
             <span>Makanan & Minuman</span>
             <h3>Gogos & Buras</h3>
-            <p>Rp 0</p>
+            <p>Rp 18.000</p>
             <div className="button-container">
               <a href="http://wa.me/6285932982930">
                 <button className="order-button">
@@ -278,7 +278,7 @@ const HomePage = () => {
             <img src="src/assets/umkm/4.png" alt="" />
             <span>Makanan & Minuman</span>
             <h3>Luti Gedang</h3>
-            <p>Rp 0</p>
+            <p>Rp 17.000</p>
             <div className="button-container">
               <a href="http://wa.me/6285932982930">
                 <button className="order-button">

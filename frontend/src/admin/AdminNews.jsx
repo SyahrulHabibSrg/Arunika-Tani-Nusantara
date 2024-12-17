@@ -39,7 +39,7 @@ const AdminNews = () => {
           `http://localhost:5000/api/news/${id}`
         );
         alert(response.data.message);
-        fetchNews(); 
+        fetchNews();
       } catch (error) {
         console.error("Error deleting news:", error);
         alert(error.response?.data?.message || "Gagal menghapus berita.");
@@ -48,7 +48,7 @@ const AdminNews = () => {
   };
 
   const updateNews = (item) => {
-    setEditNews(item); 
+    setEditNews(item);
   };
 
   return (
@@ -72,6 +72,7 @@ const AdminNews = () => {
               formData.append("title", values.title);
               formData.append("link", values.link);
               formData.append("date", values.date);
+
               if (values.logo) {
                 formData.append("logo", values.logo);
               }

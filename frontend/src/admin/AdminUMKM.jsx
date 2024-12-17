@@ -29,7 +29,7 @@ const AdminUMKM = () => {
 
   // Fungsi untuk menghapus data UMKM
   const handleDelete = async (id) => {
-    if (window.confirm("Apakah Anda yakin ingin menghapus berita ini?")) {
+    if (window.confirm("Apakah Anda yakin ingin menghapus produk UMKM ini?")) {
       try {
         const response = await axios.delete(
           `http://localhost:5000/api/umkm/${id}`

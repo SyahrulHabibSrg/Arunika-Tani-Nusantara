@@ -26,12 +26,12 @@ const NewsComponents = () => {
             <div className="news-item" key={item.id}>
               <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <img
-                  src={item.logo}
+                  src={`http://localhost:5000${item.logo}`}
                   alt="Logo"
                   className="news-logo"
                 />
                 <img
-                  src={item.thumbnail}
+                  src={`http://localhost:5000${item.thumbnail}`}
                   alt="News Thumbnail"
                   className="thumbnail"
                 />

@@ -8,4 +8,5 @@ router.post("/", upload.fields([{ name: "logo" }, { name: "thumbnail" }]), newsC
 router.put("/:id", upload.fields([{ name: "logo" }, { name: "thumbnail" }]), newsController.updateNews);
 router.delete("/:id", newsController.deleteNews);
 
+
 module.exports = router;
