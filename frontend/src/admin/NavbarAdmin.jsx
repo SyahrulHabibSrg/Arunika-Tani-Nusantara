@@ -26,8 +26,8 @@ function NavScrollExample() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1" className="text-white">
-              Dashboard
+            <Nav.Link href="/admin" className="text-white">
+              Users
             </Nav.Link>
             <Nav.Link href="/admin/umkm" className="text-white">
               Product
