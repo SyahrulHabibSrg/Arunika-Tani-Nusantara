@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import WisataPage from './pages/WisataPage';
 import FasilitasPage from './pages/FasilitasPage';
@@ -10,7 +10,7 @@ import LoginPage from "./pages/LoginPage";
 import AdminPage from "./admin/AdminPage";
 import RegisterPage from "./pages/RegisterPage";
 import AdminUMKM from "./admin/AdminUMKM";
-import AdminMessages from "./admin/adminMessages";
+import AdminMessages from "./admin/AdminMessages";
 import AdminNews from "./admin/AdminNews";
 import PrivateRoute from "./components/PrivateRoute";
 
