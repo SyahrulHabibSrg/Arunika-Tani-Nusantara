@@ -5,8 +5,8 @@ import App from './App.jsx'
 import 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import "./dist/css/main.css"  
-import "./dist/css/responsive.css"  
+import "./main.css"  
+import "./responsive.css"  
 
 import { BrowserRouter } from "react-router-dom";
 
