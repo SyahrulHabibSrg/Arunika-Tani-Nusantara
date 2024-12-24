@@ -10,7 +10,7 @@ const HomePage = () => {
       <NavbarComponents/>
       <div className="hero">
         <img
-          src="public/assets/hero.png"
+          src="/assets/hero.png"
           alt="Hero Image"
           className="hero-image"
         />
@@ -83,7 +83,7 @@ const HomePage = () => {
         <ul className="uniqueness-list">
           <li>
             <img
-              src="public/assets/keunikan/1.png"
+              src="/assets/keunikan/1.png"
               alt="Keberagaman Hayati"
               className="uniqueness-image"
             />
@@ -100,7 +100,7 @@ const HomePage = () => {
           </li>
           <li>
             <img
-              src="public/assets/keunikan/2.png"
+              src="/assets/keunikan/2.png"
               alt="Program Edukasi Lingkungan"
               className="uniqueness-image"
             />
@@ -116,7 +116,7 @@ const HomePage = () => {
           </li>
           <li>
             <img
-              src="public/assets/keunikan/3.png"
+              src="/assets/keunikan/3.png"
               alt="Komunitas Lokal yang Terlibat"
               className="uniqueness-image"
             />
@@ -140,7 +140,7 @@ const HomePage = () => {
         <div className="wisata-list">
           <div className="wisata-item">
             <img
-              src="public/assets/wisata/1.png"
+              src="/assets/wisata/1.png"
               alt="Mangrove Walk"
               className="wisata-image"
             />
@@ -159,7 +159,7 @@ const HomePage = () => {
           </div>
           <div className="wisata-item">
             <img
-              src="public/assets/wisata/2.png"
+              src="/assets/wisata/2.png"
               alt="Bird Watching"
               className="wisata-image"
             />
@@ -177,7 +177,7 @@ const HomePage = () => {
           </div>
           <div className="wisata-item">
             <img
-              src="public/assets/wisata/3.png"
+              src="/assets/wisata/3.png"
               alt="Pantai Pasir Putih"
               className="wisata-image"
             />
@@ -199,7 +199,7 @@ const HomePage = () => {
             <button className="wisata-main-button">
               Selengkapnya{" "}
               <img
-                src="public/assets/Forward Button.png"
+                src="/assets/Forward Button.png"
                 alt="Arrow Icon"
                 className="icon-arrow"
               />
@@ -218,7 +218,7 @@ const HomePage = () => {
 
         <div className="umkm-list">
           <div className="umkm-item">
-            <img src="public/assets/umkm/1.png" alt="" />
+            <img src="/assets/umkm/1.png" alt="" />
             <span>Makanan & Minuman</span>
             <h3>Otak-Otak</h3>
             <p>Rp 15.000</p>
@@ -226,7 +226,7 @@ const HomePage = () => {
               <a href="http://wa.me/6285932982930">
                 <button className="order-button">
                   <img
-                    src="public/assets/umkm/shop.png"
+                    src="/assets/umkm/shop.png"
                     alt=""
                     className="icon-send"
                   />
@@ -237,7 +237,7 @@ const HomePage = () => {
           </div>
 
           <div className="umkm-item">
-            <img src="public/assets/umkm/2.png" alt="" />
+            <img src="/assets/umkm/2.png" alt="" />
             <span>Makanan & Minuman</span>
             <h3>Gong-gong</h3>
             <p>Rp 12.000</p>
@@ -245,7 +245,7 @@ const HomePage = () => {
               <a href="http://wa.me/6285932982930">
                 <button className="order-button">
                   <img
-                    src="public/assets/umkm/shop.png"
+                    src="/assets/umkm/shop.png"
                     alt=""
                     className="icon-send"
                   />
@@ -256,7 +256,7 @@ const HomePage = () => {
           </div>
 
           <div className="umkm-item">
-            <img src="public/assets/umkm/3.png" alt="" />
+            <img src="/assets/umkm/3.png" alt="" />
             <span>Makanan & Minuman</span>
             <h3>Gogos & Buras</h3>
             <p>Rp 18.000</p>
@@ -264,7 +264,7 @@ const HomePage = () => {
               <a href="http://wa.me/6285932982930">
                 <button className="order-button">
                   <img
-                    src="public/assets/umkm/shop.png"
+                    src="/assets/umkm/shop.png"
                     alt=""
                     className="icon-send"
                   />
@@ -275,7 +275,7 @@ const HomePage = () => {
           </div>
 
           <div className="umkm-item">
-            <img src="public/assets/umkm/4.png" alt="" />
+            <img src="/assets/umkm/4.png" alt="" />
             <span>Makanan & Minuman</span>
             <h3>Luti Gedang</h3>
             <p>Rp 17.000</p>
@@ -283,7 +283,7 @@ const HomePage = () => {
               <a href="http://wa.me/6285932982930">
                 <button className="order-button">
                   <img
-                    src="public/assets/umkm/shop.png"
+                    src="/assets/umkm/shop.png"
                     alt=""
                     className="icon-send"
                   />
@@ -298,7 +298,7 @@ const HomePage = () => {
             <button className="wisata-main-button">
               Selengkapnya{" "}
               <img
-                src="public/assets/Forward Button.png"
+                src="/assets/Forward Button.png"
                 alt="Arrow Icon"
                 className="icon-arrow"
               />
@@ -317,7 +317,7 @@ const HomePage = () => {
 
         <div className="fasilitas-list">
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/1.png" alt="" />
+            <img src="/assets/fasilitas/1.png" alt="" />
             <h3>Area Parkir</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -329,7 +329,7 @@ const HomePage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/2.png" alt="" />
+            <img src="/assets/fasilitas/2.png" alt="" />
             <h3>Mushola</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -341,7 +341,7 @@ const HomePage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/3.png" alt="" />
+            <img src="/assets/fasilitas/3.png" alt="" />
             <h3>Kamar Mandi Umum</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -357,7 +357,7 @@ const HomePage = () => {
             <button className="wisata-main-button">
               Selengkapnya{" "}
               <img
-                src="public/assets/Forward Button.png"
+                src="/assets/Forward Button.png"
                 alt="Arrow Icon"
                 className="icon-arrow"
               />
@@ -378,11 +378,11 @@ const HomePage = () => {
           <div className="news-item">
             <a href="https://disbudpar.batam.go.id/2022/06/02/kampung-tua-bakau-serip-batam-masuk-50-besar-desa-wisata-terbaik/">
               <img
-                src="public/assets/berita/logo-news1.png"
+                src="/assets/berita/logo-news1.png"
                 alt="Logo"
                 className="news-logo"
               />
-              <img src="public/assets/berita/3.png" alt="News Thumbnail" className="thumbnail"/>
+              <img src="/assets/berita/3.png" alt="News Thumbnail" className="thumbnail"/>
               <h3>
                 Kampung Tua Bakau Serip Batam Masuk 50 Besar Desa Wisata Terbaik
               </h3>
@@ -392,11 +392,11 @@ const HomePage = () => {
           <div className="news-item">
             <a href="https://disbudpar.batam.go.id/2023/08/07/kemenparekraf-serahkan-bantuan-boat-untuk-desa-wisata-kampung-tua-bakau-serip/">
               <img
-                src="public/assets/berita/logo-news1.png"
+                src="/assets/berita/logo-news1.png"
                 alt="Logo"
                 className="news-logo"
               />
-              <img src="public/assets/berita/4.png" alt="News Thumbnail" className="thumbnail"/>
+              <img src="/assets/berita/4.png" alt="News Thumbnail" className="thumbnail"/>
               <h3>
                 Kemenparekraf Serahkan Bantuan Boat untuk Desa Wisata Kampung
                 Tua Bakau Serip
@@ -407,11 +407,11 @@ const HomePage = () => {
           <div className="news-item">
             <a href="https://www.polibatam.ac.id/pmm-batch-4-dari-mahasiswa-se-nusantara-untuk-masyarakat-batam/">
               <img
-                src="public/assets/berita/logo-news2.png"
+                src="/assets/berita/logo-news2.png"
                 alt="Logo"
                 className="news-logo"
               />
-              <img src="public/assets/berita/5.png" alt="News Thumbnail" className="thumbnail"/>
+              <img src="/assets/berita/5.png" alt="News Thumbnail" className="thumbnail"/>
               <h3>
                 PMM Batch 4 Dari Mahasiswa Se-Nusantara Untuk Masyarakat Batam
               </h3>
@@ -421,11 +421,11 @@ const HomePage = () => {
           <div className="news-item">
             <a href="https://ugm.ac.id/id/berita/23159-kampung-tua-bakau-serip-mitra-riset-psek-ugm-raih-penghargaan-desa-wisata-2022/">
               <img
-                src="public/assets/berita/logo-news3.png"
+                src="/assets/berita/logo-news3.png"
                 alt="Logo"
                 className="news-logo"
               />
-              <img src="public/assets/berita/6.png" alt="News Thumbnail" className="thumbnail"/>
+              <img src="/assets/berita/6.png" alt="News Thumbnail" className="thumbnail"/>
               <h3>Kegiatan Bersama Pelajar untuk Edukasi Ekosistem Mangrove</h3>
               <p>11 November 2022</p>
             </a>
@@ -436,7 +436,7 @@ const HomePage = () => {
             <button className="wisata-main-button">
               Selengkapnya{" "}
               <img
-                src="public/assets/Forward Button.png"
+                src="/assets/Forward Button.png"
                 alt="Arrow Icon"
                 className="icon-arrow"
               />

@@ -9,7 +9,7 @@ const FasilitasPage = () => {
       <NavbarComponents />
       <div className="hero">
         <img
-          src="public/assets/fasilitas/fasilitas.png"
+          src="/assets/fasilitas/fasilitas.png"
           alt="Hero Image"
           className="hero-image"
         />
@@ -40,7 +40,7 @@ const FasilitasPage = () => {
 
         <div className="fasilitas-list">
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/1.png" alt="" />
+            <img src="/assets/fasilitas/1.png" alt="" />
             <h3>Area Parkir</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -52,7 +52,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/2.png" alt="" />
+            <img src="/assets/fasilitas/2.png" alt="" />
             <h3>Mushola</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -64,7 +64,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/3.png" alt="" />
+            <img src="/assets/fasilitas/3.png" alt="" />
             <h3>Kamar Mandi Umum</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -76,7 +76,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/4.png" alt="" />
+            <img src="/assets/fasilitas/4.png" alt="" />
             <h3>Balai Pertemuan</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -88,7 +88,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/5.png" alt="" />
+            <img src="/assets/fasilitas/5.png" alt="" />
             <h3>Kios Souvenir</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -100,7 +100,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/6.png" alt="" />
+            <img src="/assets/fasilitas/6.png" alt="" />
             <h3>Homestay</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -112,7 +112,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/7.png" alt="" />
+            <img src="/assets/fasilitas/7.png" alt="" />
             <h3>Cafetaria</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -124,7 +124,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/8.png" alt="" />
+            <img src="/assets/fasilitas/8.png" alt="" />
             <h3>Restoran</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -136,7 +136,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/9.png" alt="" />
+            <img src="/assets/fasilitas/9.png" alt="" />
             <h3>Spot Foto</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -148,7 +148,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/10.png" alt="" />
+            <img src="/assets/fasilitas/10.png" alt="" />
             <h3>Jungle Tracking</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -160,7 +160,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/11.png" alt="" />
+            <img src="/assets/fasilitas/11.png" alt="" />
             <h3>Outbound Outdoor</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />
@@ -172,7 +172,7 @@ const FasilitasPage = () => {
           </div>
 
           <div className="fasilitas-item">
-            <img src="public/assets/fasilitas/12.png" alt="" />
+            <img src="/assets/fasilitas/12.png" alt="" />
             <h3>Wifi Gratis</h3>
             <div className="rating">
               <FontAwesomeIcon icon={faStar} />

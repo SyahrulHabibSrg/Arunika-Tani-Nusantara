@@ -48,7 +48,7 @@ const NavbarComponents = () => {
     <div>
       <nav className={`navbars ${isScrolled ? "scrolled" : ""}`}>
         <div className="navbar-user">
-          <img src="public/assets/logo.png" alt="Logo" className="logo" />
+          <img src="/assets/logo.png" alt="Logo" className="logo" />
           <span>
             Ekowisata Mangrove <br /> Pandang Tak Jemu
           </span>

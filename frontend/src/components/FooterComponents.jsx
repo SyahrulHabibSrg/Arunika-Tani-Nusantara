@@ -6,11 +6,11 @@ const FooterComponents = () => {
     <div>
       <footer className="footer">
         <div className="footer-top-decoration">
-          <img src="public/assets/footer/footer.png" alt="Dekorasi atas footer" />
-          <img src="public/assets/footer/footer.png" alt="Dekorasi atas footer" />
-          <img src="public/assets/footer/footer.png" alt="Dekorasi atas footer" />
-          <img src="public/assets/footer/footer.png" alt="Dekorasi atas footer" />
-          <img src="public/assets/footer/footer.png" alt="Dekorasi atas footer" />
+          <img src="/assets/footer/footer.png" alt="Dekorasi atas footer" />
+          <img src="/assets/footer/footer.png" alt="Dekorasi atas footer" />
+          <img src="/assets/footer/footer.png" alt="Dekorasi atas footer" />
+          <img src="/assets/footer/footer.png" alt="Dekorasi atas footer" />
+          <img src="/assets/footer/footer.png" alt="Dekorasi atas footer" />
         </div>
         <div className="footer-container">
           <div className="footer-logo">
@@ -29,22 +29,22 @@ const FooterComponents = () => {
             </p>
             <p>
               <a href="http://wa.me/6281270031789">
-                <img src="public/assets/footer/WhatsApp.png" alt="telepon" />
+                <img src="/assets/footer/WhatsApp.png" alt="telepon" />
                 +62 812-7003-1789
                 <br />
               </a>
               <a href="https://www.instagram.com/mangrovepandangtakjemu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <img src="public/assets/footer/Instagram.png" alt="email" />
+                <img src="/assets/footer/Instagram.png" alt="email" />
                 @mangrovepandangtakjemu
                 <br />
               </a>
               <a href="https://www.facebook.com/share/1XrFzHPSF9/">
-                <img src="public/assets/footer/facebook.png" alt="facebokk" />
+                <img src="/assets/footer/facebook.png" alt="facebokk" />
                 Ekowisata Mangrove Pandang Tak Jemu
                 <br />
               </a>
               <a href="https://youtube.com/@mangrovepandangtakjemu151?si=eSrO3rpu5it3s7Nd">
-                <img src="public/assets/footer/YouTube.png" alt="youtube" />
+                <img src="/assets/footer/YouTube.png" alt="youtube" />
                 Mangrove Pandang Tak Jemu
               </a>
             </p>

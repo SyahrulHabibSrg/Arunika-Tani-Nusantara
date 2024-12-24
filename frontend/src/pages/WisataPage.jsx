@@ -8,7 +8,7 @@ const WisataPage = () => {
       <NavbarComponents />
       <div className="hero">
         <img
-          src="public/assets/wisata/wisata.png"
+          src="/assets/wisata/wisata.png"
           alt="Hero Image"
           className="hero-image"
         />
@@ -57,7 +57,7 @@ const WisataPage = () => {
       <div id="container-budaya">
         <div className="container">
           <div className="column">
-            <img src="public/assets/wisata/budaya1.png" alt="" />
+            <img src="/assets/wisata/budaya1.png" alt="" />
             <h3>Sanggar Seni Tari Melayu</h3>
             <p>
               Tempat di mana pengunjung dapat menikmati keindahan dan keunikan
@@ -67,7 +67,7 @@ const WisataPage = () => {
             </p>
           </div>
           <div className="column">
-            <img src="public/assets/wisata/budaya2.png" alt="" />
+            <img src="/assets/wisata/budaya2.png" alt="" />
             <h3>Pentas Seni Budaya Nusantara</h3>
             <p>
               Rasakan keindahan keragaman budaya Indonesia melalui Pentas Seni
@@ -80,7 +80,7 @@ const WisataPage = () => {
             </p>
           </div>
           <div className="column">
-            <img src="public/assets/wisata/budaya3.png" alt="" />
+            <img src="/assets/wisata/budaya3.png" alt="" />
             <h3>Kriya Kerajinan Anyaman Lidi Kelapa</h3>
             <p>
               Pengunjung dapat menikmati pengalaman unik dalam Kriya Kerajinan
@@ -102,7 +102,7 @@ const WisataPage = () => {
       </div>
       <div className="container-buatan">
         <div className="column">
-          <img src="public/assets/wisata/budaya1.png" alt="" />
+          <img src="/assets/wisata/budaya1.png" alt="" />
           <h3>Camping/Kemah</h3>
           <p>
             Rasakan pengalaman berkemah di tengah alam dengan suasana mangrove
@@ -113,7 +113,7 @@ const WisataPage = () => {
           </p>
         </div>
         <div className="column">
-          <img src="public/assets/wisata/budaya2.png" alt="" />
+          <img src="/assets/wisata/budaya2.png" alt="" />
           <h3>Paintball Games</h3>
           <p>
             Rasakan sensasi petualangan dan strategi seru di Paintball Games

@@ -7,7 +7,7 @@ const GaleriPage = () => {
       <NavbarComponents />
       <div className="hero">
         <img
-          src="public/assets/galeri/galeri.png"
+          src="/assets/galeri/galeri.png"
           alt="Hero Image"
           className="hero-image"
         />
@@ -39,19 +39,19 @@ const GaleriPage = () => {
 
         <div className="gallery-cards">
           <div className="gallery-card">
-            <img src="public/assets/berita/2.png" alt="" />
+            <img src="/assets/berita/2.png" alt="" />
             <div className="card-content">
               <p>Anugerah Desa Wisata Indonesia ADWI 2022</p>
             </div>
           </div>
           <div className="gallery-card">
-            <img src="public/assets/berita/2.png" alt="" />
+            <img src="/assets/berita/2.png" alt="" />
             <div className="card-content">
               <p>Anugerah Desa Wisata Indonesia API 2022</p>
             </div>
           </div>
           <div className="gallery-card">
-            <img src="public/assets/berita/2.png" alt="" />
+            <img src="/assets/berita/2.png" alt="" />
             <div className="card-content">
               <p>Anugerah Desa Wisata Indonesia LADM 2022</p>
             </div>
@@ -97,15 +97,15 @@ const GaleriPage = () => {
           </p>
         </div>
         <div className="photo-gallery">
-          <img src="public/assets/galeri/4.png" alt="" />
-          <img src="public/assets/galeri/5.png" alt="" />
-          <img src="public/assets/galeri/6.png" alt="" />
-          <img src="public/assets/galeri/7.png" alt="" />
-          <img src="public/assets/galeri/8.png" alt="" />
-          <img src="public/assets/galeri/9.png" alt="" />
-          <img src="public/assets/galeri/10.png" alt="" />
-          <img src="public/assets/galeri/11.png" alt="" />
-          <img src="public/assets/galeri/12.png" alt="" />
+          <img src="/assets/galeri/4.png" alt="" />
+          <img src="/assets/galeri/5.png" alt="" />
+          <img src="/assets/galeri/6.png" alt="" />
+          <img src="/assets/galeri/7.png" alt="" />
+          <img src="/assets/galeri/8.png" alt="" />
+          <img src="/assets/galeri/9.png" alt="" />
+          <img src="/assets/galeri/10.png" alt="" />
+          <img src="/assets/galeri/11.png" alt="" />
+          <img src="/assets/galeri/12.png" alt="" />
         </div>
         <div className="gallery-video-container">
           <iframe

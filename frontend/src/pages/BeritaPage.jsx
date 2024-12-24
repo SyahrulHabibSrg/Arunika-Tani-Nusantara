@@ -8,31 +8,31 @@ const BeritaPage = () => {
 
   const slides = [
     {
-      imgSrc: "public/assets/berita/1.png",
+      imgSrc: "/assets/berita/1.png",
       link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
       caption:
         "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
     },
     {
-      imgSrc: "public/assets/berita/slide2.png",
+      imgSrc: "/assets/berita/slide2.png",
       link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
       caption:
         "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
     },
     {
-      imgSrc: "public/assets/berita/slide3.png",
+      imgSrc: "/assets/berita/slide3.png",
       link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
       caption:
         "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
     },
     {
-      imgSrc: "public/assets/berita/slide4.png",
+      imgSrc: "/assets/berita/slide4.png",
       link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
       caption:
         "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
     },
     {
-      imgSrc: "public/assets/berita/slide5.png",
+      imgSrc: "/assets/berita/slide5.png",
       link: "https://www.indonesia.travel/id/id/ide-liburan/jelajahi-pesona-pesisir-nongsa-di-kampung-tua-bakau-serip-batam.html",
       caption:
         "Jelajahi Pesona Pesisir Nongsa di Kampung Tua Bakau Serip, Batam",
@@ -55,7 +55,7 @@ const BeritaPage = () => {
       <NavbarComponents />;
       <div className="hero">
         <img
-          src="public/assets/berita/hero.png"
+          src="/assets/berita/hero.png"
           alt="Hero Image"
           className="hero-image"
         />
@@ -116,7 +116,7 @@ const BeritaPage = () => {
           </div>
 
           <div className="news-solo">
-            <img src="public/assets/berita/2.png" alt="" />
+            <img src="/assets/berita/2.png" alt="" />
             <div className="news-details">
               <p>
                 Menparekraf Dorong Desa Wisata Kampung Tua Bakau Serip Jadi
@@ -124,7 +124,7 @@ const BeritaPage = () => {
               </p>
               <div className="news-meta">
                 <span>31 Mei 2022</span>
-                <img src="public/assets/berita/news1.png" alt="Logo" />
+                <img src="/assets/berita/news1.png" alt="Logo" />
               </div>
             </div>
           </div>

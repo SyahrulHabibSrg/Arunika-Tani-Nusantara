@@ -28,7 +28,7 @@ const UMKM = () => {
           <div className="button-container">
             <a href="http://wa.me/6285932982930">
               <button className="order-button">
-                <img src="public/assets/umkm/shop.png" alt="" className="icon-send" />
+                <img src="/assets/umkm/shop.png" alt="" className="icon-send" />
                 Pesan
               </button>
             </a>
