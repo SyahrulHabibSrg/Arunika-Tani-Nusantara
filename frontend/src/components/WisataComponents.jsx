@@ -19,7 +19,7 @@ const WisataComponents = () => {
         style={{ display: currentSlide === 1 ? "flex" : "none" }}
       >
         <div className="column">
-          <img src="src/assets/wisata/1.png" alt="Wisata 1" />
+          <img src="public/assets/wisata/1.png" alt="Wisata 1" />
           <h3>Wisata Alam Mangrove Pandang Tak Jemu</h3>
           <p>
             Keindahan alam dan keasrian ekosistem mangrove berpadu. Di sini,
@@ -31,7 +31,7 @@ const WisataComponents = () => {
           </p>
         </div>
         <div className="column">
-          <img src="src/assets/wisata/wisata2.png" alt="Wisata 2" />
+          <img src="public/assets/wisata/wisata2.png" alt="Wisata 2" />
           <h3>View Pemandangan Laut Dan Pesisir</h3>
           <p>
             View Pemandangan Laut Dan pesisir Pantai Hutan Mangrove selain
@@ -40,7 +40,7 @@ const WisataComponents = () => {
           </p>
         </div>
         <div className="column">
-          <img src="src/assets/wisata/wisata3.png" alt="Wisata 3" />
+          <img src="public/assets/wisata/wisata3.png" alt="Wisata 3" />
           <h3>Edukasi Ekosistem Pesisir</h3>
           <p>
             Keunikan ekosistem pesisir di Mangrove Pandang Tak Jemu melalui
@@ -58,7 +58,7 @@ const WisataComponents = () => {
         style={{ display: currentSlide === 2 ? "flex" : "none" }}
       >
         <div className="column">
-          <img src="src/assets/wisata/wisata4.png" alt="Wisata 4" />
+          <img src="public/assets/wisata/wisata4.png" alt="Wisata 4" />
           <h3>Jelajahi Pesisir Dengan Boat</h3>
           <p>
             Nikmati pengalaman unik menyusuri pesisir mangrove menggunakan boat
@@ -71,7 +71,7 @@ const WisataComponents = () => {
           </p>
         </div>
         <div className="column">
-          <img src="src/assets/wisata/wisata5.png" alt="Wisata 5" />
+          <img src="public/assets/wisata/wisata5.png" alt="Wisata 5" />
           <h3>Penanaman Mangrove</h3>
           <p>
             Ikuti pengalaman menanam mangrove di Mangrove Pandang Tak Jemu!
@@ -85,7 +85,7 @@ const WisataComponents = () => {
           </p>
         </div>
         <div className="column">
-          <img src="src/assets/wisata/wisata6.png" alt="Wisata 6" />
+          <img src="public/assets/wisata/wisata6.png" alt="Wisata 6" />
           <h3>Kegiatan Outbond</h3>
           <p>
             Outbound di Mangrove Pandang Tak Jemu menawarkan pengalaman seru dan
@@ -100,10 +100,10 @@ const WisataComponents = () => {
       </div>
 
       <button onClick={prevSlide} className="slide-button-wisata left-butt-wisata">
-        <img src="src/assets/wisata/button.png" alt="" />
+        <img src="public/assets/wisata/button.png" alt="" />
       </button>
       <button onClick={nextSlide} className="slide-button-wisata right-butt-wisata">
-        <img src="src/assets/wisata/button.png" alt="" />
+        <img src="public/assets/wisata/button.png" alt="" />
       </button>
     </div>
   );

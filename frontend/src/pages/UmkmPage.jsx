@@ -8,7 +8,7 @@ const UmkmPage = () => {
       <NavbarComponents />
       <div className="hero">
         <img
-          src="src/assets/umkm.png"
+          src="public/assets/umkm.png"
           alt="Hero Image"
           className="hero-image"
         />

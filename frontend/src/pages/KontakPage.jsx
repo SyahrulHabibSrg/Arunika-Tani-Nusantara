@@ -8,7 +8,7 @@ const KontakPage = () => {
       <NavbarComponents />
       <div className="hero">
         <img
-          src="src/assets/kontak/kontak.png"
+          src="public/assets/kontak/kontak.png"
           alt="Hero Image"
           className="hero-image"
         />
@@ -34,19 +34,19 @@ const KontakPage = () => {
 
         <div className="team-content">
           <div className="team-member">
-            <img src="src/assets/kontak/1.png" alt="Gery D Smith" />
+            <img src="public/assets/kontak/1.png" alt="Gery D Smith" />
             <h4>Gery D Smith</h4>
             <p>
               Ketua Pokdarwis Kampung Tua Bakau Serip
               <br /> Mangrove Pandang Tak Jemu
             </p>
             <a href="https://linkedin.com" target="_blank">
-              <img src="src/assets/kontak/linkedin.png" alt="LinkedIn" />
+              <img src="public/assets/kontak/linkedin.png" alt="LinkedIn" />
             </a>
           </div>
           <div className="team-member">
             <img
-              src="src/assets/kontak/2.png"
+              src="public/assets/kontak/2.png"
               alt="Izzuddin Haidar Al Qossam"
             />
             <h4>Izzuddin Haidar Al Qossam</h4>
@@ -58,11 +58,11 @@ const KontakPage = () => {
               href="https://www.linkedin.com/in/izzuddin-haidar-al-qossam-544a531b9/"
               target="_blank"
             >
-              <img src="src/assets/kontak/linkedin.png" alt="LinkedIn" />
+              <img src="public/assets/kontak/linkedin.png" alt="LinkedIn" />
             </a>
           </div>
           <div className="team-member">
-            <img src="src/assets/kontak/3.png" alt="Dea Aisyah Wulandari" />
+            <img src="public/assets/kontak/3.png" alt="Dea Aisyah Wulandari" />
             <h4>Dea Aisyah Wulandari</h4>
             <p>
               Hispter
@@ -72,11 +72,11 @@ const KontakPage = () => {
               href="https://www.linkedin.com/in/dea-aisyah-wulandari-162012309"
               target="_blank"
             >
-              <img src="src/assets/kontak/linkedin.png" alt="LinkedIn" />
+              <img src="public/assets/kontak/linkedin.png" alt="LinkedIn" />
             </a>
           </div>
           <div className="team-member">
-            <img src="src/assets/kontak/4.png" alt="Syahrul Habib" />
+            <img src="public/assets/kontak/4.png" alt="Syahrul Habib" />
             <h4>Syahrul Habib</h4>
             <p>
               Hacker
@@ -86,7 +86,7 @@ const KontakPage = () => {
               href="https://www.linkedin.com/in/syahrul-habib-5b6949295/"
               target="_blank"
             >
-              <img src="src/assets/kontak/linkedin.png" alt="LinkedIn" />
+              <img src="public/assets/kontak/linkedin.png" alt="LinkedIn" />
             </a>
           </div>
         </div>

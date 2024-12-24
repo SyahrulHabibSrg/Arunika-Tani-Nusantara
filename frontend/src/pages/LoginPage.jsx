@@ -46,7 +46,7 @@ function LoginPage() {
       className="d-flex justify-content-center align-items-center"
       style={{
         height: "100vh",
-        backgroundImage: 'url("./src/assets/login.jpg")',
+        backgroundImage: 'url("./public/assets/login.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
